@@ -1,0 +1,22 @@
+<div class="col-sm-8 col-sm-offset-2">
+    <div class="row">Weather cities goes here</div>
+
+    <div class="row">
+        <button ng-click="getCityList()">Get cities</button>
+        <input class="form-control" ng-model="weather">
+    </div>
+    <div ng-if="cityList" class="row">List af byer i {{cityList.NewDataSet[0].Table[0].Country}}
+        <ul class="example-animate-container">
+            <li class="animate-repeat" ng-repeat="city in cityList.NewDataSet">
+                [{{$index + 1}}] {{city.Table[0].Country}} who is {{city.Table[1].City}} years old.
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <pre>{{ cityList.NewDataSet[0].Table[0] | json}}</pre>
+        <pre>{{ cityList.NewDataSet[0] | json}}</pre>
+        <pre>{{ cityList | json}}</pre>
+
+    </div>
+</div>

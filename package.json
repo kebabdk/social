@@ -1,0 +1,13 @@
+{
+  "name": "TimeSuck",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "bootstrap": "^3.3.6",
+    "easysoap": "^1.0.5",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.14",
+    "request": "^2.72.0",
+    "wsdlrdr": "^0.3.8"
+  }
+}
